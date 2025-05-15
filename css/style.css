@@ -286,6 +286,7 @@ li {
   text-align: left;
   margin-bottom: 10px;
   position: relative;
+  z-index: 100;
 }
 
 .hero__placeholder {
@@ -328,6 +329,8 @@ li {
 }
 
 .hero__btn {
+  position: relative;
+  z-index: 100;
   cursor: pointer;
   border: none;
   display: block;
@@ -350,6 +353,7 @@ li {
   font-size: var(--s);
   font-weight: 800;
   color: var(--text-dark);
+  transition: .2s all ease;
 }
 
 .hero__btn:hover {
@@ -365,7 +369,7 @@ li {
 
 .hero__decor {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   left: 0;
   bottom: 0;
   width: 80px;

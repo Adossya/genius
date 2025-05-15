@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+
+    <!--Header -->
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__wrapper-logo">
+                            <div class="header__logo">
+                    <a href="https://genius.space/" class="header__link">
+                        <img src="./img/header__logo.svg" class="header__logo-img" alt="Logo">
+                    </a>
+                </div>
+                <div class="header__format">
+                    <img src="./img/black.svg" alt="" class="header__svg">
+                    Безкоштовний майстер-клас
+                </div>
+            </div>
+ 
+            <ul class="header__info">
+                <li>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path  d="M15.8331 2.3752H15.0414V0.79187H13.4581V2.3752H5.54145V0.79187H3.95811V2.3752H3.16645C2.29561 2.3752 1.58311 3.0877 1.58311 3.95854V16.6252C1.58311 17.496 2.29561 18.2085 3.16645 18.2085H15.8331C16.7039 18.2085 17.4164 17.496 17.4164 16.6252V3.95854C17.4164 3.0877 16.7039 2.3752 15.8331 2.3752ZM15.8331 16.6252H3.16645V6.33354H15.8331V16.6252Z" fill="#C9EA32"></path>
+                    </svg>
+                    <span class="header__date">16 травня</span>
+                </li>
+                <li>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M9 6H10.75V10.375H15.125V12.125H9V6Z" fill="#C9EA32"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.25 10.5C19.25 15.3326 15.3326 19.25 10.5 19.25C5.66738 19.25 1.75 15.3326 1.75 10.5C1.75 5.66738 5.66738 1.75 10.5 1.75C15.3326 1.75 19.25 5.66738 19.25 10.5ZM17.5 10.5C17.5 12.3565 16.7625 14.137 15.4497 15.4497C14.137 16.7625 12.3565 17.5 10.5 17.5C8.64349 17.5 6.86301 16.7625 5.55025 15.4497C4.2375 14.137 3.5 12.3565 3.5 10.5C3.5 8.64349 4.2375 6.86301 5.55025 5.55025C6.86301 4.2375 8.64349 3.5 10.5 3.5C12.3565 3.5 14.137 4.2375 15.4497 5.55025C16.7625 6.86301 17.5 8.64349 17.5 10.5Z" fill="#C9EA32"></path>
+                    </svg>
+                    <span class="header__date">19:00 за київським часом</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+    <!--Hero-->
+    <section class="hero">
+    <div class="container">
+        <div class="hero__wrapper">
+              <div class="hero__content">
+                <h1 class="hero__title">
+                    Як стати графічним дизайнером, та заробляти у сфері дизайну <br>
+                    <span class="mark">від $2500 на місяць</span>
+                </h1>
+                <h3 class="hero__subtitle">
+                    Ви дізнаєтесь що це за професія та з чого почати свій шлях. У яких програмах працює графічний дизайнер у 2024 році. Чому потрібно постійно зростати у своїх навичках та як це зробити швидко та цікаво.
+                </h3>
+            </div>
+            <div class="hero__wrapper-form" id="form">
+                <form action="https://www.geniusm360.com/add_subscriber.html" class="hero__form">
+                    <h2 class="hero__form-title">
+                        Залиште заявку
+                        <br>
+                        <span class="mark">на майстер-клас</span>
+                    </h2>
+                    <div class="hero__gift">
+                        <div class="hero__gift-icon">
+                            <img src="./img/form__gift.png" alt="Gift_icon" class="hero__gift-img">
+                        </div>
+                        <div class="hero__gift-descr">
+                            та додаткових робочих матеріалів <span>прямо зараз</span>
+                        </div>
+                    </div>
+                    <label class="hero__label">
+                        <span>Введіть ваше ім'я</span>
+                        <input type="text" name="name" class="hero__input" required>
+                    </label>
+                    <label class="hero__label">
+                        <span>Введіть ваш email</span>
+                        <input type="email" name="name" class="hero__input" required>
+                    </label>
+                    <label class="hero__label">
+                        <span>Введіть ваш номер телефону</span>
+                        <input type="email" name="name" class="hero__input" required>
+                    </label>
+                    <button class="hero__btn" type="submit">Взяти участь</button>
+                </form>
+              
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+    <!--Logos-->
+    <section class="logos">
+    <h3 class="logos__title">
+        ПРО НАС ГОВОРЯТЬ І ПИШУТЬ:
+    </h3>
+    <div class="logos__slider">
+        <div class="logos__track">
+               <a href="https://forbes.ua/lifestyle/it-dizayn-chi-marketing-gid-navchalnimi-platformami-shkolami-ta-agregatorami-shcho-dopomozhut-opanuvati-novu-profesiyu-29062022-6890" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/forbes.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://www.ukrainer.net/servisy-dlia-ua/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/ukrainer.svg" alt="forbes" class="logos__svg">
+
+                </a>
+                <a href="https://mc.today/nachat-vse-zanovo-7-platform-s-kursami-gde-ukraintsy-mogut-uchitsya-besplatno/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/mctoday.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://hub.kyivstar.ua/articles/dobirka-korysnyh-bezkoshtovnyh-kursiv-ta-biznes-podkastiv" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/kyivstarhub.png" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://vogue.ua/article/culture/lifestyle/velika-dobirka-bezkoshtovnih-kursiv-dlya-ukrajinciv-48400.html" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/vogue.png" alt="forbes" class="logos__svg">
+                </a>
+                <!-- <a href="https://marieclaire.ua/life/bezkoshtovne-navchannya-z-marketingu-biznesu-ta-digital-profesij-dlya-ukrayintsiv-nova-politika-kompaniyi-genius-space/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/forbes-2.svg" alt="forbes" class="logos__svg">
+                </a> -->
+                <a href="https://vctr.media/ua/velika-dobirka-bezoplatnih-kursiv-u-kreativnij-ekonomiczi-138363/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/vector.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://news.finance.ua/ua/10-bezkoshtovnyh-kursiv-dlya-osvoyennya-novyh-profesiy-ta-vyvchennya-mov" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/finance.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://mc.today/nachat-vse-zanovo-7-platform-s-kursami-gde-ukraintsy-mogut-uchitsya-besplatno/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/mctoday.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://ain.ua/ru/2016/04/14/pervoe-v-sng-soobshhestvo-internet-predprinimatelej-genius-marketing/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/ain.svg" alt="forbes" class="logos__svg">
+                </a>               <a href="https://forbes.ua/lifestyle/it-dizayn-chi-marketing-gid-navchalnimi-platformami-shkolami-ta-agregatorami-shcho-dopomozhut-opanuvati-novu-profesiyu-29062022-6890" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/forbes.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://www.ukrainer.net/servisy-dlia-ua/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/ukrainer.svg" alt="forbes" class="logos__svg">
+
+                </a>
+                <a href="https://mc.today/nachat-vse-zanovo-7-platform-s-kursami-gde-ukraintsy-mogut-uchitsya-besplatno/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/mctoday.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://hub.kyivstar.ua/articles/dobirka-korysnyh-bezkoshtovnyh-kursiv-ta-biznes-podkastiv" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/kyivstarhub.png" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://vogue.ua/article/culture/lifestyle/velika-dobirka-bezkoshtovnih-kursiv-dlya-ukrajinciv-48400.html" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/vogue.png" alt="forbes" class="logos__svg">
+                </a>
+                <!-- <a href="https://marieclaire.ua/life/bezkoshtovne-navchannya-z-marketingu-biznesu-ta-digital-profesij-dlya-ukrayintsiv-nova-politika-kompaniyi-genius-space/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/forbes-2.svg" alt="forbes" class="logos__svg">
+                </a> -->
+                <a href="https://vctr.media/ua/velika-dobirka-bezoplatnih-kursiv-u-kreativnij-ekonomiczi-138363/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/vector.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://news.finance.ua/ua/10-bezkoshtovnyh-kursiv-dlya-osvoyennya-novyh-profesiy-ta-vyvchennya-mov" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/finance.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://mc.today/nachat-vse-zanovo-7-platform-s-kursami-gde-ukraintsy-mogut-uchitsya-besplatno/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/mctoday.svg" alt="forbes" class="logos__svg">
+                </a>
+                <a href="https://ain.ua/ru/2016/04/14/pervoe-v-sng-soobshhestvo-internet-predprinimatelej-genius-marketing/" 
+                class="logos__item"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="./img/ain.svg" alt="forbes" class="logos__svg">
+                </a>
+        </div>
+     
+    </div>
+</section>
+
+    <!--About-->
+    <section class="about">
+    <div class="container">
+        <div class="about__title">
+            ПРО ЩО МИ <span class="mark">ПОГОВОРИМО</span>
+        </div>
+        <div class="about__wrapper">
+                <div class="about__item greenBrd">
+                    <img src="./img/about_icon1.svg" alt="" class="about__item-svg">
+                    <h3 class="about__item-title">Що це за професія</h3>
+                    <div class="about__item-descr">та що саме робить графічний дизайнер</div>
+                </div>
+                <div class="about__item greenBrd">
+                    <img src="./img/about_icon2.svg" alt="" class="about__item-svg">
+                    <h3 class="about__item-title">Які програми обрати</h3>
+                    <div class="about__item-descr">У яких програмах потрібно працювати графічному дизайнеру у 2024 році</div>
+                </div>
+                <div class="about__item greenBrd">
+                    <img src="./img/about_icon3.svg" alt="" class="about__item-svg">
+                    <h3 class="about__item-title">З чого почати свій шлях</h3>
+                    <div class="about__item-descr">Як знайти першу роботу в студії чи знайти замовника на фрілансі</div>
+                </div>
+                <div class="about__item redBrd">
+                    <img src="./img/about_icon4.svg" alt="" class="about__item-svg">
+                    <h3 class="about__item-title">Як зростати професійно</h3>
+                    <div class="about__item-descr">Не жертвуючи своїм часом на відпочинок та тримати work\life balance</div>
+                </div>
+                <div class="about__item redBrd">
+                    <img src="./img/about_icon5.svg" alt="" class="about__item-svg">
+                    <h3 class="about__item-title">Закордонні замовники</h3>
+                    <div class="about__item-descr">Як спілкуватись з закордонними замовниками, що саме вони очікують від вашої роботи</div>
+                </div>
+        </div>
+    </div>
+</section>
+
+    <!--UI slider-->
+    <section class="slider">
+    <div class="slider__track">
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+        <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+        <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+        <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+                <div class="slider__item">            
+            <img src="./img/star.svg" alt="forbes" class="slider__svg">
+            ГРАФІЧНИЙ ДИЗАЙНЕР
+        </div>
+    </div>
+</section>
+
+    <!--Count-->
+    <section class="count">
+    <div class="container">
+        <div class="count__wrapper">
+            <div class="count__img">
+                <img src="./img/count__img.png" alt="Count_bg" class="count__img">
+            </div>
+            <div class="count__content">
+                <h2 class="count__title">
+                    ЧИ БУДЕ ЗАПИС
+                    <br>
+                    <span class="mark">ОНЛАЙН ВЕБІНАРУ</span>
+                </h2>
+                <div class="count__descr">
+                    Ми розуміємо, що сучасний темп життя не завжди дозволяє налаштувати графік зучним для вас чином, тому усім хто зареєструється на вебінар буде відправлений його запис
+                </div>
+                <a class="hero__btn count__btn" href="#form">Взяти участь</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!--Speaker-->
+    <section class="speaker">
+    <div class="container">
+        <h3 class="speaker__title">
+            ХТО БУДЕ <span class="mark">ПРОВОДИТИ</span>
+        </h3>
+        <div class="speaker__wrapper">
+
+            <img src="./img/speaker.jpg" alt="" class="speaker__photo">
+
+            <div class="speaker__info">
+                <h3 class="speaker__name">Артемьєв Арсеній</h3>
+                <div class="speaker__exp">Працював дизайнером в <span>Halo-Lab</span>, <span>BBDO Ukraine</span> та <span>FEDORIV</span></div>
+                <ul class="speaker__list">
+                    <li>
+                        <img src="./img/small_star.svg" alt="" class="speaker__svg">
+                        Графічний дизайнер зі стажем понад 10 років</li>
+                    <li>
+                        <img src="./img/small_star.svg" alt="" class="speaker__svg">
+                        Створив понад 50 логотипів, 30 брендбуків, гайдлайнів та презентацій</li>
+                    <li>
+                        <img src="./img/small_star.svg" alt="" class="speaker__svg">
+                        Загалом виконав більше ніж 1000 графічних замовлень у різних галузях</li>
+                    <li>
+                        <img src="./img/small_star.svg" alt="" class="speaker__svg">
+                        <p><span> Ментор з курсу “Графічний дизайнер”</span>  
+                        <br>  від Genius Space</p>
+                        </li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Description-->
+    <section class="description">
+    <div class="container">
+        <div class="description__wrapper">
+            <div class="description__content">
+                <h2 class="description__title">
+                    Як стати графічним дизайнером, та заробляти у сфері дизайну <br>
+                    <span class="mark">від $2500 на місяць</span>
+                </h2>
+                <h3 class="description__subtitle">
+                    Дізнайся на онлайн майстер-класi
+                </h3>
+                <a class="hero__btn description__btn" href="#form">Взяти участь</a>
+            </div>
+            <div class="description__decor" >
+
+                    <img src="./img/description__img.png" alt="Decor_img" class="description__img">
+
+
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+    <!--Footer-->
+    
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico">
     <title>Безкоштовний майстер-клас</title>
     <link rel="stylesheet" href="./css/reset.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -92,7 +93,7 @@
                     </label>
                     <label class="hero__label">
                         <span class="hero__placeholder">Введіть ваш номер телефону</span>
-                        <input type="tel" name="phone" class="hero__input" pattern="[0-9]{10,15}" required  autocomplete="off">
+                        <input type="tel" name="phone" id="phone" class="hero__input" pattern="[0-9]{10,15}" required  autocomplete="off">
                     </label>
                     <button class="hero__btn" type="submit">Взяти участь</button>
                     <div class="hero__decor" >
@@ -547,6 +548,9 @@
     </div>
 </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

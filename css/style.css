@@ -301,6 +301,7 @@ li {
   transition: .3s ease;
   color: gray;
   font-family: var(--default-font-family);
+  pointer-events: none;
 }
 
 .hero__placeholder.active {
@@ -978,6 +979,12 @@ li {
   color: hsla(0,0%,100%,.8);
   margin-right: 2px;
   margin-bottom: 10px;
+  transition: .1 all ease;
+}
+
+.footer__menu-list li:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .footer__contacts {
@@ -1004,6 +1011,12 @@ li {
 .footer__contacts-link {
   font-family: var(--default-font-family);
   font-size: 13px;
+  color: hsla(0,0%,100%,.8);
+}
+
+.footer__contacts-link:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .footer__contacts-mail {
@@ -1042,6 +1055,11 @@ li {
   font-size: 12px;
   color: hsla(0,0%,100%,.8);
   font-family: var(--default-font-family);
+}
+
+.footer__docs li:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .footer__docs li:last-child {

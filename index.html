@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <title>Безкоштовний майстер-клас</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -91,40 +92,17 @@
                     </label>
                     <label class="hero__label">
                         <span class="hero__placeholder">Введіть ваш номер телефону</span>
-                        <input type="phone" name="phone" class="hero__input" required  autocomplete="off">
+                        <input type="tel" name="phone" class="hero__input" pattern="[0-9]{10,15}" required  autocomplete="off">
                     </label>
                     <button class="hero__btn" type="submit">Взяти участь</button>
                     <div class="hero__decor" >
                         <img src="./img/form__decor1.svg" alt="svg" >
                     </div>
                     <div class="hero__decor-top">
-                        <img src="./img/form__decor2.svg"" alt="svg">
+                        <img src="./img/form__decor2.svg" alt="svg">
                     </div>
                 </form>
-              <!-- <div class="intl-tel-input allow-dropdown">
-                <div class="flag-container">
-                    <div class="selected-flag" tabindex="0" title="Ukraine (Україна): +380">
-                        <div class="iti-flag ua"></div>
-                        <div class="iti-arrow"></div>
-                    </div>
-                    <ul class="country-list hide">
-                        <li class="country preferred active" data-dial-code="380" data-country-code="ua">
-                            <div class="flag-box"
-                            ><div class="iti-flag ua"></div>
-                        </div>
-                        <span class="country-name">Ukraine (Україна)</span>
-                        <span class="dial-code">+380</span>
-                        </li>
-                        <li class="country preferred" data-dial-code="7" data-country-code="kz">
-                            <div class="flag-box">
-                                <div class="iti-flag kz"></div>
-                            </div>
-                            <span class="country-name">Kazakhstan (Казахстан)</span>
-                            <span class="dial-code">+7</span>
-                        </li>
-                        <li class="divider"></li>
-                    </ul>
-                </div> -->
+            </div>
         </div>
       
     </div>
@@ -303,7 +281,7 @@
 
 
     <!--UI slider-->
-    <section class="slider">
+    <div class="slider">
     <div class="slider__track">
         <div class="slider__item">            
             <img src="./img/big_star.svg" alt="forbes" class="slider__svg">
@@ -370,7 +348,7 @@
             ГРАФІЧНИЙ ДИЗАЙНЕР
         </div>
     </div>
-</section>
+</div>
 
     <!--Count-->
     <section class="count">
@@ -460,8 +438,8 @@
             <div class="description__decor" >
   
                 <img src="./img/description__img.png" alt="Decor_img" class="description__img">       
-                <img src="./img/middle_star.svg" class="description__decor-right"></img>
-                <img src="./img/middle_star.svg" class="description__decor-left"></img>
+                <img src="./img/middle_star.svg" alt="Decor_star" class="description__decor-right">
+                <img src="./img/middle_star.svg" alt="Decor_star" class="description__decor-left">
             </div>
         </div>
       
@@ -469,7 +447,7 @@
 </section>
 
     <!--Footer-->
-    <section class="footer">
+    <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__info">
@@ -567,7 +545,7 @@
         </div>
 
     </div>
-</section>
+</footer>
 
     <script src="js/script.min.js"></script>
 </body>

@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  // Обработка фокуса и потери фокуса для кастомных placeholder
+
   document.querySelectorAll('.hero__label').forEach(label => {
     const input = label.querySelector('.hero__input'),
           placeholder = label.querySelector('.hero__placeholder'),
@@ -74,8 +74,8 @@ window.addEventListener('DOMContentLoaded', () => {
     function validatePhone() {
     const value = phoneInput.value.trim();
 
-    // Проверка, есть ли номер и его длина
-    const digitsCount = value.replace(/\D/g, '').length; // считаем только цифры
+
+    const digitsCount = value.replace(/\D/g, '').length; 
 
     if (digitsCount >= 12) {
         // Можем считать, что номер достаточно длинный
@@ -90,12 +90,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     }
 
-    console.log('isValidNumber' in iti); // должно быть true
-    console.log('isValid:', iti.isValidNumber ? iti.isValidNumber() : 'Нет метода');
-
     phoneInput.addEventListener('blur', () => {
-    console.log('Number:', phoneInput.value);
-    console.log('isValid:', iti.isValidNumber());
+
     validatePhone();
     });
     phoneInput.addEventListener('change', validatePhone);

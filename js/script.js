@@ -5,7 +5,15 @@ window.addEventListener('DOMContentLoaded', () => {
           placeholder = label.querySelector('.hero__placeholder'),
           nameInput = document.querySelector('input[name="name"]'),
           emailInput = document.querySelector('input[name="email"]'),
-          form = document.querySelector('.hero__form');
+          form = document.querySelector('.hero__form'),
+          dayPlace = document.querySelector('.header__date');
+
+    const today = new Date();
+    const options = { month: 'long', day: 'numeric' };
+    const dateUkWithoutYear = new Intl.DateTimeFormat('uk-UA', options).format(today);
+
+    dayPlace.textContent = dateUkWithoutYear;
+
 
     nameInput.addEventListener('input', () => {
         if (isValidName(nameInput.value)) {
@@ -26,7 +34,6 @@ window.addEventListener('DOMContentLoaded', () => {
         emailInput.classList.add('error');
     }
     });
-
 
 
     input.addEventListener('focus', () => {
@@ -102,6 +109,8 @@ window.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
     }
     });
+
+
 
 
 });

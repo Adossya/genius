@@ -1,21 +1,20 @@
 window.addEventListener('DOMContentLoaded', () => {
-
+    
+    const dayPlace = document.querySelector('.header__date');
+    
     const today = new Date();
-
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
-
     const options = { month: 'long', day: 'numeric' };
     const tomorrowUk = new Intl.DateTimeFormat('uk-UA', options).format(tomorrow);
-
+    dayPlace.textContent = tomorrowUk;
 
   document.querySelectorAll('.hero__label').forEach(label => {
     const input = label.querySelector('.hero__input'),
           placeholder = label.querySelector('.hero__placeholder'),
           nameInput = document.querySelector('input[name="name"]'),
           emailInput = document.querySelector('input[name="email"]'),
-          form = document.querySelector('.hero__form'),
-          dayPlace = document.querySelector('.header__date');
+          form = document.querySelector('.hero__form');
 
     nameInput.addEventListener('input', () => {
         if (isValidName(nameInput.value)) {

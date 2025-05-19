@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const options = { month: 'long', day: 'numeric' };
     const tomorrowUk = new Intl.DateTimeFormat('uk-UA', options).format(tomorrow);
     dayPlace.textContent = tomorrowUk;
+    console.log(tomorrowUk);
 
   document.querySelectorAll('.hero__label').forEach(label => {
     const input = label.querySelector('.hero__input'),

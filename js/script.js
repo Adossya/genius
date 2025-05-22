@@ -1,14 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    
-    const dayPlace = document.querySelector('.header__date');
-    
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
-    const options = { month: 'long', day: 'numeric' };
-    const tomorrowUk = new Intl.DateTimeFormat('uk-UA', options).format(tomorrow);
-    dayPlace.textContent = tomorrowUk;
-    console.log(tomorrowUk);
 
   document.querySelectorAll('.hero__label').forEach(label => {
     const input = label.querySelector('.hero__input'),
@@ -36,6 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
         emailInput.classList.add('error');
     }
     });
+
+
 
     input.addEventListener('focus', () => {
       placeholder.classList.add('active');
@@ -70,15 +62,18 @@ window.addEventListener('DOMContentLoaded', () => {
         utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js', 
     });
 
+
     if (iti.getSelectedCountryData()) {
         phoneInput.value = '+' + iti.getSelectedCountryData().dialCode;
     }
         phoneInput.addEventListener('countrychange', () => {
     const countryData = iti.getSelectedCountryData();
+    
 
     });
     function validatePhone() {
     const value = phoneInput.value.trim();
+
 
     const digitsCount = value.replace(/\D/g, '').length; 
 

@@ -9,9 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
           dayPlace = document.querySelector('.header__date');
 
     const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+    
     const options = { month: 'long', day: 'numeric' };
-    const dateUkWithoutYear = new Intl.DateTimeFormat('uk-UA', options).format(today);
-
+    const dateUkWithoutYear = new Intl.DateTimeFormat('uk-UA', options).format(tomorrow);
+    
     dayPlace.textContent = dateUkWithoutYear;
 
 
